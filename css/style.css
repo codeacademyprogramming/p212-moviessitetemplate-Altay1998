@@ -1,0 +1,139 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-left-part{
+    width: 65%;
+    height: 700px;
+    position: relative;
+}
+.header-left-part .logo-part{
+    position:absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 1.1em;
+    z-index: 1;
+}
+.header-right-part{
+    width: 35%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-big-afisha.afisha{
+    height: 60%;
+    width: 100%;
+}
+.right-small-afishas{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.right-small-afisha.afisha{
+    width: 50%;
+    height: 100%;
+}
+.right-small-afisha.afisha h2{
+    top: 20%;
+}
+.right-small-afisha.afisha .imdb{
+    top: 15%;
+}
+.right-small-afisha.afisha ul{
+   left: -15px;
+   top:55%;
+}
+.afisha{
+position: relative; 
+height: 100%;
+width: 100%;
+}
+.overlay-div{
+    position: relative;
+}
+.overlay-div>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    display: block;
+    background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.1));
+}
+.afisha ul{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 5%;
+    z-index: 1;   
+}
+.afisha ul>li{    
+    width: 150px;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative; 
+
+}
+.afisha ul>li>img{
+    display: inline-block;
+    width: 20px;
+}
+.afisha ul>li>.word{
+    display:inline-block;
+    width: 70%;
+    position: absolute;
+    top: 4px;
+}
+.word p{
+    vertical-align: top;
+}
+.afisha ul>li:first-child img{
+    width: 80px;
+}
+.afisha ul>li:first-child{
+    width: 100px;
+    box-sizing: border-box;
+}
+.afisha>.about-film>p{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 44%;
+    font-size: 19px;
+}
+.afisha .director{
+    width: 50px;
+    height: 50px;
+}
+.afisha .director p{
+    display: inline-block;
+}
+.afisha .director img{
+    display: inline-block;
+}
+.afisha h2{
+position: absolute;
+top: 35%;
+left: 10%;
+font-size: 2.2em;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.imdb{
+    background-color: #F1B722;
+    padding: 2px 10px;
+    border-radius:20px;
+}
+.afisha .imdb{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+.overlay-div{
+    height: 100%;
+    width: 100%;
+}
