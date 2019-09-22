@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+h2{
+    color: white;
+}
 header{
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +43,7 @@ header{
 }
 .right-small-afisha.afisha h2{
     top: 20%;
+    
 }
 .right-small-afisha.afisha .imdb{
     top: 15%;
@@ -48,21 +57,32 @@ position: relative;
 height: 100%;
 width: 100%;
 }
+.afisha .overlay-div img{
+    transition-duration: .5s;
+}
+.afisha .overlay-div:hover  img{
+    transform: scale(1.1);
+}
+.afisha:hover{
+    cursor: pointer;
+}
 .overlay-div{
     position: relative;
+overflow: hidden;
 }
 .overlay-div>div{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     display: block;
     background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.1));
 }
+
 .afisha ul{
     position: absolute;
-    width: 100%;
+    width: 450;
     top: 50%;
     left: 5%;
     z-index: 1;   
@@ -97,20 +117,64 @@ width: 100%;
 }
 .afisha>.about-film>p{
     position: absolute;
-    top: 60%;
+    color: white;
+    top: 57%;
     left: 10%;
-    width: 44%;
-    font-size: 19px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+.afisha a{
+    color: white;
+}
+.read-more{
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+    padding: 20px 30px 10px 30px;
+    width: 150px;
+    border-radius: 5px;
+    height: 60px;
+    border:2px solid #2D2628; 
+    box-sizing: border-box;
+    transition-duration: 0.5s;  
+    cursor: pointer;
+}
+.read-more a{
+    color: white;
+    font-size: bold;
+    transition-duration: 0.5s;
+}
+.read-more:hover{
+    background-color: white;
+    border-color: white
+
+}
+.read-more:hover a{
+    color: #2D2628;
+}
+a{
+    text-decoration: none;
 }
 .afisha .director{
-    width: 50px;
-    height: 50px;
+    width:180px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 .afisha .director p{
     display: inline-block;
+    width: 50px;
+    font-size: bold;
+    color: white;
+    vertical-align: bottom;
 }
 .afisha .director img{
+    width: 50px;
+    height: 50px;
     display: inline-block;
+    border-radius: 5px;
 }
 .afisha h2{
 position: absolute;
