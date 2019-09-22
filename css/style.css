@@ -29,6 +29,8 @@ header{
     flex-wrap: wrap;
 }
 .right-big-afisha.afisha{
+    
+position: relative; 
     height: 60%;
     width: 100%;
 }
@@ -38,8 +40,28 @@ header{
     display: flex;
 }
 .right-small-afisha.afisha{
+    
+position: relative; 
     width: 50%;
     height: 100%;
+}
+
+.header-left-part ul,.right-big-afisha.afisha ul{
+    position: absolute;top: 50%;
+    left: 5%;
+}
+.right-small-afisha.afisha ul>li{
+    
+    display: inline-block;
+}
+.right-big-afisha.afisha ul>li{
+    
+    display: inline-block;
+}
+.header-left-part ul>li{
+    
+        display: inline-block;
+    
 }
 .right-small-afisha.afisha h2{
     top: 20%;
@@ -47,15 +69,16 @@ header{
 }
 .right-small-afisha.afisha .imdb{
     top: 15%;
+    position: absolute;
+    left: 10%;
 }
 .right-small-afisha.afisha ul{
+    position: absolute;top: 50%;
    left: -15px;
    top:55%;
 }
 .afisha{
-position: relative; 
 height: 100%;
-width: 100%;
 }
 .afisha .overlay-div img{
     transition-duration: .5s;
@@ -81,17 +104,15 @@ overflow: hidden;
 }
 
 .afisha ul{
-    position: absolute;
+    
     width: 450;
-    top: 50%;
-    left: 5%;
+    
     z-index: 1;   
 }
 .afisha ul>li{    
     width: 150px;
     font-size: 14px;
     box-sizing: border-box;
-    display: inline-block;
     position: relative; 
 
 }
@@ -101,10 +122,11 @@ overflow: hidden;
 }
 .afisha ul>li>.word{
     display:inline-block;
-    width: 70%;
+    width: 100%;
     position: absolute;
     top: 4px;
 }
+
 .word p{
     vertical-align: top;
 }
@@ -154,9 +176,7 @@ overflow: hidden;
 .read-more:hover a{
     color: #2D2628;
 }
-a{
-    text-decoration: none;
-}
+
 .afisha .director{
     width:180px;
     position: absolute;
@@ -188,16 +208,174 @@ img{
 }
 .imdb{
     background-color: #F1B722;
-    padding: 2px 10px;
+    padding: 5px 10px 1px;
     border-radius:20px;
+    color: white;
+    width: 30px;
+    height: 25px;
 }
-.afisha .imdb{
+.right-big-afisha .imdb,.header-left-part .imdb{
     position: absolute;
     top: 30%;
     left: 10%;
-    color: white;
 }
 .overlay-div{
     height: 100%;
     width: 100%;
+}
+
+nav.navigation {
+    background-color: #0C2738;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    top:0;
+    justify-content: space-around ;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.navigation .logo-part{
+    width: 200px;
+    height: 20px;
+}
+
+.navigation ul>li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 20px;
+    position: relative;
+    
+}
+.navigation ul>li>a{
+    color: #728897;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+.navigation ul>li:first-child a{
+    color: white;
+}
+.navigation ul>li:first-child::after{
+    content: ' ';
+    width: 50px;
+    height: 2px;
+    background-color: #F1B722;
+    position: absolute;
+    top: 60px;
+    
+}
+.navigation ul>li:hover a{
+    color: white;
+}
+.hightlights{
+    width: 100%;
+    height: 800px;
+    background-color: #081B27;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+.hightlights h2{
+
+    font-size: 350%;
+}
+.hightlights .hightlight-content{
+    width: 50%;
+}
+.hightlights .hightlight-content>div{
+    margin-left: 150px;
+    
+}
+.hightlights .hightlight-content>div>p{
+    color: #7F99AC;
+    margin-top: -40px;
+    font-size: 150%;
+}
+.hightlights .hightlight-menu{
+width: 50%;
+
+}
+.hightlights .hightlight-menu>div{
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 20%;
+}
+.hightlights .hightlight-menu ul,.hightlights .hightlight-menu ul>li>.hightlight-menu-list{
+    width: 100%;
+
+}
+.hightlights .hightlight-menu ul{
+    margin-left: -40px;
+}
+.hightlights .hightlight-menu ul>li {
+    display: inline-block;
+    text-align: center;
+    padding: 1px 30px 1px;
+    border-radius: 30px;
+    margin-left: 20px;  
+    color:#374550;
+    
+    transition-duration: .5s;
+    background-color: #0C2738;
+}
+.hightlights .hightlight-menu ul>li:first-child{
+    background-color: #FFFFFF;
+    color:#374550;
+}
+.hightlights .hightlight-menu ul>li:hover,.hightlights .hightlight-menu ul>li:hover:first-child{
+    color:white;
+    cursor:pointer;
+}
+
+.hightlights-afishas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80%;
+}
+.hightlights-afishas .hightlights-afisha   {
+  width: 18%;
+  height:70%;
+  margin: 10px;
+}
+.hightlights-afishas .hightlights-afisha .photo {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.hightlights-afishas .hightlights-afisha ul>li{
+    width: 100%;        
+}
+.hightlights-afishas .hightlights-afisha ul{
+    margin-left: -40px;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+}
+.hightlights-afishas .hightlights-afisha .photo .imdb{
+    margin-left: 100px;  
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+.hightlights-afishas .hightlights-afisha .photo img{
+    width: 100%;
+    height: 100%;
+    margin-top: -35px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    
+}
+
+.hightlights-afishas .hightlights-afisha h3{
+    font-size: 120%;
+    color: white;
+}
+.manu-hight{
+    position: relative;
 }
