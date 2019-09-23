@@ -29,11 +29,14 @@ header{
     flex-wrap: wrap;
 }
 .right-big-afisha.afisha{
-    
 position: relative; 
     height: 60%;
     width: 100%;
 }
+
+.right-big-afisha.afisha .word{
+    width: 80%;
+    }
 .right-small-afishas{
     height: 40%;
     width: 100%;
@@ -83,15 +86,18 @@ height: 100%;
 .afisha .overlay-div img{
     transition-duration: .5s;
 }
-.afisha .overlay-div:hover  img{
+.overlay-div:hover  img{
     transform: scale(1.1);
 }
-.afisha:hover{
+header .afisha:hover{
     cursor: pointer;
 }
 .overlay-div{
     position: relative;
 overflow: hidden;
+
+height: 100%;
+width: 100%;
 }
 .overlay-div>div{
     position: absolute;
@@ -104,9 +110,7 @@ overflow: hidden;
 }
 
 .afisha ul{
-    
     width: 450;
-    
     z-index: 1;   
 }
 .afisha ul>li{    
@@ -137,12 +141,13 @@ overflow: hidden;
     width: 100px;
     box-sizing: border-box;
 }
-.afisha>.about-film>p{
+.afisha .about-film>p{
     position: absolute;
     color: white;
     top: 57%;
     left: 10%;
-    width: 400px;
+    width: 410px;
+    
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 32px;
@@ -177,20 +182,20 @@ overflow: hidden;
     color: #2D2628;
 }
 
-.afisha .director{
+ .director{
     width:180px;
     position: absolute;
     bottom: 2%;
     right: 2%;
 }
-.afisha .director p{
+.director p{
     display: inline-block;
     width: 50px;
     font-size: bold;
     color: white;
     vertical-align: bottom;
 }
-.afisha .director img{
+ .director img{
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -219,10 +224,7 @@ img{
     top: 30%;
     left: 10%;
 }
-.overlay-div{
-    height: 100%;
-    width: 100%;
-}
+
 
 nav.navigation {
     background-color: #0C2738;
@@ -280,16 +282,18 @@ nav.navigation {
 
     font-size: 350%;
 }
-.hightlights .hightlight-content{
+.hightlight-content{
     width: 50%;
 }
-.hightlights .hightlight-content>div{
+ .hightlight-content>div{
     margin-left: 150px;
     
 }
 .hightlights .hightlight-content>div>p{
-    color: #7F99AC;
     margin-top: -40px;
+}
+.hightlight-content>div>p{
+    color: #7F99AC;
     font-size: 150%;
 }
 .hightlights .hightlight-menu{
@@ -337,32 +341,32 @@ width: 50%;
     box-sizing: border-box;
     height: 80%;
 }
-.hightlights-afishas .hightlights-afisha   {
+.hightlights-afisha{
   width: 18%;
   height:70%;
   margin: 10px;
 }
-.hightlights-afishas .hightlights-afisha .photo {
+ .hightlights-afisha .photo {
     width: 100%;
     height: 80%;
     position: relative;
 }
-.hightlights-afishas .hightlights-afisha ul>li{
+.hightlights-afisha ul>li{
     width: 100%;        
 }
-.hightlights-afishas .hightlights-afisha ul{
+ .hightlights-afisha ul{
     margin-left: -40px;
     list-style: none;
     position: absolute;
     top: 30px;
 }
-.hightlights-afishas .hightlights-afisha .photo .imdb{
+ .hightlights-afisha .photo .imdb{
     margin-left: 100px;  
     position: absolute;
     top: 0px;
     z-index: 1;
 }
-.hightlights-afishas .hightlights-afisha .photo img{
+ .hightlights-afisha .photo img{
     width: 100%;
     height: 100%;
     margin-top: -35px;
@@ -378,4 +382,116 @@ width: 50%;
 }
 .manu-hight{
     position: relative;
+}
+
+.header-left-part.afisha.big-aphisha{
+    width: 100%;
+    height: 1000px;;
+}
+.header-left-part.afisha.big-aphisha ul>li{
+    left: 20px;
+}
+.header-left-part.afisha.big-aphisha .overlay-div>div{
+    
+    background-image: linear-gradient(to top,rgba(12, 39, 56,1),rgba(12, 39, 56,0.1));    
+}
+.header-left-part.afisha.big-aphisha .overlay-div:hover img{
+    
+    transform: scale(1);   
+}
+.header-left-part.afisha.big-aphisha .read-more,.header-left-part.afisha.big-aphisha .director{
+    bottom: 150px;
+}
+
+.new-releases{
+background-color: #0C2738;
+width: 100%;
+height: 800px;
+position: relative;
+}
+.new-releases .hightlight-content{
+    width: 100%;
+    height: 200px;
+}
+.new-releases.afisha .hightlight-content>div>h2{
+    position: absolute;
+    top: -200px;
+    font-size: 80px;
+}
+.new-releases .hightlight-content>div{
+   position: relative;  
+   margin-left: 400px;
+   width: 40%;
+}
+
+.new-releases.afisha .hightlight-content>div>p{
+    position: absolute;
+    margin: 0;
+    left: 20%;
+}
+.new-releases.afisha .releases{
+    position: absolute;
+    top:70px; 
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.new-releases.afisha .releases .releases-left{
+    width: 40%;
+}
+.new-releases.afisha .releases .releases-left .photo{
+    width: 70%;
+    height: 90%;
+    margin: auto;
+}
+.new-releases.afisha .releases .releases-left .hightlights-afisha{
+    width: 100%;
+    height: 100%;
+}
+.new-releases.afisha .releases .releases-left .photo img{
+    width: 100%;
+    height: 100%;
+}
+.new-releases.afisha .releases .releases-left .hightlights-afisha .photo .imdb{
+    left: 60px;
+}
+
+.new-releases.afisha .releases .releases-left .hightlights-afisha ul{
+    top:600px;
+    left: 90px;
+}
+.new-releases.afisha .releases .releases-left .hightlights-afisha ul>li>h2{
+    margin: 5px;
+    width: 350px;
+    margin-left: -10px;
+}
+.new-releases.afisha .releases .releases-left .hightlights-afisha ul>li:last-child{
+    margin-top: 40px;
+}
+.new-releases.afisha .releases .releases-right{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.new-releases.afisha .releases .releases-right .hightlights-afisha{
+    width: 40%;
+    height: 43%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.new-releases.afisha .releases .releases-right .hightlights-afisha ul{
+    top: 250px;
+}
+.new-releases.afisha .releases .releases-right .hightlights-afisha ul>li>h2{
+    width: 200px;
+    margin: 0;
+    margin-left: -10px;
+    font-size: 25px;
+}
+.new-releases.afisha .releases .releases-right .hightlights-afisha ul>li:last-child{
+    margin-top: 35px;
+}
+.new-releases.afisha .releases .releases-right .hightlights-afisha .photo .imdb{
+    left: 40px;
 }
