@@ -18,7 +18,7 @@ header{
 .header-left-part .logo-part{
     position:absolute;
     top: 50px;
-    left: 30px;
+    left: 90px;
     font-size: 1.1em;
     z-index: 1;
 }
@@ -494,4 +494,48 @@ position: relative;
 }
 .new-releases.afisha .releases .releases-right .hightlights-afisha .photo .imdb{
     left: 40px;
+}
+
+.about-search{
+    background-color: rgba(12, 39, 56,1);
+    height: 300px;
+    position: relative;
+}
+.about-search>p{
+   position: absolute;
+   top: 100px;
+   left: 420px;
+   font-size: 18px;
+   letter-spacing: 1px;
+   color: #F1B722;
+}
+.about-search>.search-part{
+    position: absolute;
+    top: 160px;
+    width: 500px; 
+    left: 360px;
+}
+.about-search input[type="search"] {
+    width: 100%;  
+   padding: 20px 50px;
+   border-radius: 30px;
+   text-align: center;
+   outline: none;
+   
+}
+.about-search input[type="search"]::placeholder{
+   font-size: 20px;
+   
+}
+.about-search i{
+    position: absolute;
+    font-size: 30px;
+    color:#F1B722;
+    right: 30px;
+    bottom: 12px;
+}
+.into-about{
+    height: 650px;
+    background-size: 100%;
+    background-image: linear-gradient(to top,rgba(12, 39, 56,1),rgba(12, 39, 56,0.1)),url("https://assets.website-files.com/59f5ab35fccfea0001f70443/5a099901d345d400015ce0a7_Photo-8.jpg");
 }
